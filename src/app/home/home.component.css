@@ -1,0 +1,65 @@
+/* Style du corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Style du conteneur de la barre de recherche */
+div {
+  margin: 20px;
+}
+
+/* Style de la barre de recherche */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+/* Style du conteneur des musiques */
+.music-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 musiques par ligne */
+  gap: 15px; /* Espace entre les boxes */
+  margin-top: 20px;
+}
+
+/* Style de chaque élément de musique */
+.music-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style de l'image de musique */
+.music-image {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+.detail{
+  margin-top: 10%;
+}
+/* Style du titre de la musique */
+h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+/* Style de l'artiste */
+p {
+  margin: 0;
+  color: #555;
+}
+@media (max-width: 600px) {
+  .music-container {
+      grid-template-columns: 1fr; /* 1 musique par ligne sur petits écrans */
+  }
+}
