@@ -1,8 +1,9 @@
+<div class="shared-background">
 <div>
   <!-- Barre de recherche -->
   <input type="text" placeholder="Rechercher une musique ou un artiste" [(ngModel)]="searchTerm" (input)="filterMusic()">
 </div>
-
+</div>
 <!-- Conteneur pour les musiques -->
 <div class="music-container">
   <div *ngFor="let music of filteredMusicList" class="music-item">

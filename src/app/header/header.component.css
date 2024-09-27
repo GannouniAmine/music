@@ -3,14 +3,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f4f4f4;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: auto;
     height: 100px;
 }
+/* styles.css or the corresponding component CSS file */
+.shared-background {
+    background-color: rgba(240, 240, 240, 0.8); /* Light gray with some transparency */
+    background-image: url('/assets/—Pngtree—blue\ musical\ notes\ background_1986629.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
 #logo{
-    height: 80px; 
+    height: 200px; 
 }
 header img {
     height: 50px; 
@@ -22,13 +30,17 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+#profile{
+    cursor: pointer;
+}
 
 nav ul a {
     text-decoration: none;
     color: #333;
-    margin: 0 15px;
+    margin: 0 30px;
     font-weight: bold;   
-    font-size: 20px;    
+    font-size: 20px;
+    cursor: pointer;
 }
 
 nav ul a:hover {
